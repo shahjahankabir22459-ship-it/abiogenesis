@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    
+    <h1 style="font-size : 70px"><strong>Hydrothermal Vants</strong></h1>
+    <div id="stars"></div>
+        <style>
+            #stars i {
+                position:fixed;
+                width:2px;
+                height:2px;
+                background:#FFFFFF;
+                border-radius:50%;
+                pointer-events:none;
+            }
+            body{
+               background-color:#001010;
+            }
+            h1{
+                color: #ffffff;
+                text-align: center;
+            }
+            p{
+                color:black;
+            }
+            button{
+                color:#FFFFFF;
+            }
+        </style> 
+        <script>
+            for(let i=0;i<150;i++){
+            let s=document.createElement("i");
+            s.style.left=Math.random()*100+"vw";
+            s.style.top=Math.random()*100+"vh";
+            s.style.opacity=Math.random();
+            document.getElementById("stars").appendChild(s);
+        }
+        </script> 
+        <button class="home-button" onclick="window.location.href='abiogenesis1.html'">
+            home
+        </button>
+
+        <style>
+            .home-button {
+                background: transparent;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                padding: 10px 20px;
+                cursor: pointer;
+            }
+        </style>
+      
+
+</html>
